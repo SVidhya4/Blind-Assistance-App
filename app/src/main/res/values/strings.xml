@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Lisa</string>
+    <string name="gpu">GPU</string>
+    <string name="camera_preview">Camera preview stream</string>
+</resources>
