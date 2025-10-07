@@ -67,13 +67,15 @@ dependencies {
     implementation ("net.java.dev.jna:jna:5.13.0@aar")
     implementation ("com.alphacephei:vosk-android:0.3.47@aar")
 
-    implementation("org.tensorflow:tensorflow-lite:2.16.1")
-    implementation("org.tensorflow:tensorflow-lite-support:0.4.4")
+//    implementation("org.tensorflow:tensorflow-lite:2.16.1")
+//    implementation("org.tensorflow:tensorflow-lite-support:0.4.4")
+//
+//    implementation("org.tensorflow:tensorflow-lite-gpu-delegate-plugin:0.4.4")
+//    implementation("org.tensorflow:tensorflow-lite-gpu-api:2.16.1")
+//    implementation("org.tensorflow:tensorflow-lite-api:2.16.1")
+//    implementation("org.tensorflow:tensorflow-lite-gpu:2.16.1")
+//    implementation("org.tensorflow:tensorflow-lite-select-tf-ops:2.16.1")
 
-    implementation("org.tensorflow:tensorflow-lite-gpu-delegate-plugin:0.4.4")
-    implementation("org.tensorflow:tensorflow-lite-gpu-api:2.16.1")
-    implementation("org.tensorflow:tensorflow-lite-api:2.16.1")
-    implementation("org.tensorflow:tensorflow-lite-gpu:2.16.1")
-    implementation("org.tensorflow:tensorflow-lite-select-tf-ops:2.16.1")
+    implementation("org.json:json:20230227")
 
 }

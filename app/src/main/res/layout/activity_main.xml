@@ -8,70 +8,46 @@
     android:layout_height="match_parent"
     android:background="@color/black">
 
-    <!-- ImageView for displaying camera frames -->
     <ImageView
         android:id="@+id/previewImage"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintDimensionRatio="3:4"
-        android:scaleType="fitCenter"
-        android:adjustViewBounds="true"
         android:contentDescription="@string/camera_preview"
-        tools:src="@drawable/ic_launcher_background"/>
-
-    <!-- Inference time label -->
-    <TextView
-        android:id="@+id/inferenceTime"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="32dp"
-        android:textColor="@color/white"
-        tools:text="100ms"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintVertical_bias="1.0"
+        tools:src="@drawable/ic_launcher_background" />
 
-    <!-- Bottom controls container -->
-    <LinearLayout
-        android:id="@+id/bottomBar"
+    <TextView
+        android:id="@+id/statusText"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="16dp"
+        android:layout_marginBottom="112dp"
         android:background="#80000000"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="Tap 'Describe Scene' to start."
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintEnd_toEndOf="parent"
 
-        <!-- Status Text -->
-        <TextView
-            android:id="@+id/statusText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="#FFFFFF"
-            android:textSize="16sp"
-            android:text="Say 'hey lisa' or tap Describe" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
 
-        <!-- Describe Scene Button -->
-        <Button
-            android:id="@+id/btnDescribe"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Describe scene" />
-
-        <!-- GPU Toggle Button -->
-        <ToggleButton
-            android:id="@+id/isGpu"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:background="@color/orange"
-            android:textColor="@color/white"
-            android:textOff="@string/gpu"
-            android:textOn="@string/gpu"/>
-    </LinearLayout>
+    <Button
+        android:id="@+id/btnDescribe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Describe Scene"
+        app:layout_constraintBottom_toTopOf="@id/statusText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
