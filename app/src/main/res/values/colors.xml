@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-        <color name="black">#000000</color>
-        <color name="white">#FFFFFF</color>
-        <color name="orange">#FF9800</color>
-        <color name="purple_500">#6200EE</color>
-        <color name="purple_700">#3700B3</color>
-        <color name="teal_200">#03DAC5</color>
+        <color name="lisa_background_dark">#121212</color> <color name="lisa_card_background">#1E1E1E</color> <color name="lisa_primary_blue">#3949AB</color>   <color name="lisa_text_primary">#FFFFFF</color>     <color name="lisa_text_secondary">#B0BEC5</color>  <color name="black">#FF000000</color>
+        <color name="white">#FFFFFFFF</color>
 </resources>
