@@ -1,13 +1,11 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <style name="Base.Theme.Lisa" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Theme.Lisa" parent="Theme.Material3.DayNight.NoActionBar">
         <item name="colorPrimary">@color/lisa_primary_blue</item>
     </style>
 
-    <style name="Theme.Lisa" parent="Base.Theme.Lisa" />
-
     <style name="Theme.App.Starting" parent="Theme.SplashScreen">
         <item name="postSplashScreenTheme">@style/Theme.Lisa</item>
-        <item name="windowSplashScreenBackground">@drawable/splash_background</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/splash_logo_sized</item>
+        <item name="windowSplashScreenBackground">@color/lisa_background_dark</item>
     </style>
-
 </resources>

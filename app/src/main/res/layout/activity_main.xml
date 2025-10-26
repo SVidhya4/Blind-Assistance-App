@@ -6,30 +6,42 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/lisa_background_dark"
-    android:fitsSystemWindows="true">  <ImageView
-    android:id="@+id/splash_logo"
-    android:layout_width="120dp"
-    android:layout_height="120dp"
-    android:src="@drawable/lisa_logo"
-    app:layout_constraintBottom_toTopOf="@id/splash_title"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toStartOf="parent"
-    android:contentDescription="LISA Logo"/>
+    android:fitsSystemWindows="true">
 
-    <TextView
-        android:id="@+id/splash_title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="monospace"
-        android:textColor="@color/lisa_text_primary"
-        android:textSize="34sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:text="" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/animation_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
+        <ImageView
+            android:id="@+id/animated_logo"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/lisa_logo"
+            app:layout_constraintVertical_bias="0.45"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/animated_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="montserrat"
+            android:textColor="@color/lisa_text_primary"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/animated_logo" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
@@ -37,7 +49,6 @@
         android:layout_height="?attr/actionBarSize"
         android:background="@color/lisa_card_background"
         android:elevation="4dp"
-        android:alpha="0"
         tools:alpha="1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -71,8 +82,6 @@
         android:contentDescription="@string/camera_preview"
         android:scaleType="fitCenter"
         android:layout_margin="16dp"
-        android:alpha="0"
-        tools:alpha="1"
         android:visibility="gone"
         tools:visibility="visible"
         app:layout_constraintTop_toBottomOf="@id/toolbar"
@@ -80,14 +89,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         tools:src="@drawable/ic_launcher_background" />
-
     <androidx.cardview.widget.CardView
         android:id="@+id/controls_card"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        android:alpha="0"
-        tools:alpha="1"
         app:cardBackgroundColor="@color/lisa_card_background"
         app:cardCornerRadius="16dp"
         app:cardElevation="8dp"
@@ -141,4 +147,5 @@
             </LinearLayout>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
