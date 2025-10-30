@@ -178,7 +178,7 @@ class MainActivity : AppCompatActivity() {
         animatedText.animate().alpha(1f).setDuration(500).start()
         delay(500)
         if (ttsReady) {
-            val welcomeMessage = "Welcome to Lisa, Live Intelligent Sight Assistance."
+            val welcomeMessage = "Welcome to Lisa, Live Intelligent Sight Assistant."
             speakOut(welcomeMessage)
         }
         val fullText = "Live Intelligent Sight Assistant"
