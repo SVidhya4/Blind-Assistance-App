@@ -20,6 +20,8 @@ The system runs **entirely on a local network** (like a mobile hotspot) with no 
 
 ## 🔧 Architecture & Tech Stack
 
+![Architecture](https://github.com/user-attachments/assets/2fca53d5-81bf-4e46-abc3-64b5c8ea6546)
+
 LISA operates as a self-contained system on a local Wi-Fi network (typically a mobile hotspot).
 
 1.  **The Network (Router):** Your **Android Phone's Mobile Hotspot** creates the private Wi-Fi network.
@@ -37,6 +39,8 @@ LISA operates as a self-contained system on a local Wi-Fi network (typically a m
 * **Mobile App:** Kotlin, Android SDK, OkHttp, Picovoice (Porcupine & Rhino)
 * **AI Backend:** Python, Flask, Transformers (`Salesforce/blip-image-captioning-base`), EasyOCR
 * **Network:** Mobile Hotspot (as a local-only router)
+
+
 
 ---
 
@@ -86,6 +90,8 @@ To run the full system, you must start all three components on the same network.
     .setAccessKey("YOUR_PICOVOICE_ACCESS_KEY_HERE")
     ```
 5.  Run the app on your Android phone (which is already connected to its own hotspot).
+![Screenshot_20251030_194832_Lisa](https://github.com/user-attachments/assets/985fd83b-683c-4a31-a4fc-17e1cef74ee7)
+![Screenshot_20251030_194811_Lisa](https://github.com/user-attachments/assets/a9031896-efdd-4c81-9292-19381135d460)
 
 ---
 
