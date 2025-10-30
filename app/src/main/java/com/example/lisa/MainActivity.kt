@@ -31,7 +31,6 @@ import java.net.HttpURLConnection
 import java.net.URL
 import java.util.*
 import java.util.concurrent.TimeUnit
-// ✅ 1. ADD PICOVOICE IMPORTS
 import ai.picovoice.picovoice.*
 
 class MainActivity : AppCompatActivity() {
@@ -55,12 +54,8 @@ class MainActivity : AppCompatActivity() {
     private lateinit var tts: TextToSpeech
     private var detectionJob: Job? = null
     private var isProcessing = false
-    // ❌ 2. REMOVE THE OLD BROADCAST RECEIVER
-    // private lateinit var voiceCommandReceiver: BroadcastReceiver
     private var isContinuouslyDescribing = false
     private val mainScope = CoroutineScope(Dispatchers.Main)
-
-    // ✅ 3. ADD PICOVOICE MANAGER VARIABLE
     private var picovoiceManager: PicovoiceManager? = null
 
     private val client = OkHttpClient.Builder()
@@ -71,9 +66,9 @@ class MainActivity : AppCompatActivity() {
 
     companion object {
         private const val TAG = "MainActivity"
-        private const val STREAM_URL = "http://40.0.31.181:81/stream"
-        private const val CAPTION_SERVER_URL = "https://unnationally-gruffish-tama.ngrok-free.dev/caption"
-        private const val OCR_SERVER_URL = "https://unnationally-gruffish-tama.ngrok-free.dev/read_text"
+        private const val STREAM_URL = "http://10.227.159.178:81/stream"
+        private const val CAPTION_SERVER_URL = "http://10.227.159.211:5000/caption"
+        private const val OCR_SERVER_URL = "http://10.227.159.211:5000/read_text"
         private const val REQUEST_RECORD_AUDIO = 1
     }
 
@@ -201,7 +196,6 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    // ✅ 4. SIMPLIFY setupListeners
     private fun setupListeners() {
         btnDescribe.setOnClickListener {
             if (isProcessing) stopProcessing() else {
@@ -261,7 +255,6 @@ class MainActivity : AppCompatActivity() {
                         }
                     }
                 }
-                // ❌ The .setTimeoutCallback method is removed
                 .build(applicationContext)
 
             picovoiceManager?.start()
