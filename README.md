@@ -19,7 +19,8 @@ The system runs **entirely on a local network** (like a mobile hotspot) with no 
 
 ## 🔧 Architecture & Tech Stack
 
-<img width="488" height="284" alt="image" src="https://github.com/user-attachments/assets/0d12b26d-c424-43ac-aa79-1b0a55751e86" />
+<img width="1112" height="625" alt="image" src="https://github.com/user-attachments/assets/152e4137-70d9-49bd-9d2c-12a620d98058" />
+
 
 
 LISA operates as a self-contained system on a local Wi-Fi network (typically a mobile hotspot).
@@ -90,8 +91,19 @@ To run the full system, you must start all three components on the same network.
     .setAccessKey("YOUR_PICOVOICE_ACCESS_KEY_HERE")
     ```
 5.  Run the app on your Android phone (which is already connected to its own hotspot).
-![Screenshot_20251030_194832_Lisa](https://github.com/user-attachments/assets/985fd83b-683c-4a31-a4fc-17e1cef74ee7)
-![Screenshot_20251030_194811_Lisa](https://github.com/user-attachments/assets/a9031896-efdd-4c81-9292-19381135d460)
+
+   <div align="center">
+      <img width="272" height="576" alt="image" src="https://github.com/user-attachments/assets/616a3984-a4ed-4de4-8b02-882310548611" />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <img width="277" height="581" alt="image" src="https://github.com/user-attachments/assets/918a19ca-8da1-4842-a043-7b5e726f6953" />
+   </div>
+   <br>
+   <div align="center">
+      <img width="272" height="576" alt="image" src="https://github.com/user-attachments/assets/2f30282e-97e3-48de-a830-30626e81639d" />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <img width="277" height="581" alt="image" src="https://github.com/user-attachments/assets/313528ec-755c-4574-8ed2-65d56ce24111" />
+   </div>
+
 
 ---
 
