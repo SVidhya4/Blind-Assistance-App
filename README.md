@@ -6,7 +6,6 @@ The system runs **entirely on a local network** (like a mobile hotspot) with no 
 
 ## ✨ Features
 
-* **Fully Offline & Local:** Runs on a private network (e.g., your phone's hotspot). No internet, no cloud.
 * **Real-time Video:** Streams a live feed from a wearable ESP32-CAM.
 * **AI Scene Description:** Uses a locally-hosted BLIP model to generate natural language descriptions of what the camera sees.
 * **AI Text Reading (OCR):** Employs a locally-hosted EasyOCR model to find and read any text in the camera's view.
@@ -20,7 +19,8 @@ The system runs **entirely on a local network** (like a mobile hotspot) with no 
 
 ## 🔧 Architecture & Tech Stack
 
-![Architecture](https://github.com/user-attachments/assets/2fca53d5-81bf-4e46-abc3-64b5c8ea6546)
+<img width="488" height="284" alt="image" src="https://github.com/user-attachments/assets/0d12b26d-c424-43ac-aa79-1b0a55751e86" />
+
 
 LISA operates as a self-contained system on a local Wi-Fi network (typically a mobile hotspot).
 
